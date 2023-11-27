@@ -57,17 +57,15 @@ public:
 		}
 	}
 
-	int PopBack() 
+	int PopBack()
 	{
 		if (!IsEmpty())
 		{
-			int last = data[real_count - 1];
-			real_count--;
-			return last;
+			return ar[--index];
 		}
 		else
 		{
-			throw "Queue is empty!";
+			throw "Stack is empty!";
 		}
 	}
 
